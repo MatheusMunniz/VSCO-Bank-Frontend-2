@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="./src/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./index.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <title>VSCO</title>
+  </head>
+  <body>
+    <main>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark navbarcolor">
+                <div class="container-fluid">
+                    <a href="#" class="navbar-brand"><img src="./src/logo4.png" alt=""></a>
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse7">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse7">
+                        <div class="navbar-nav">
+                            <a href="#" class="nav-item nav-link"></a>
+                        </div>
+                        <form class="d-flex ms-auto">
+                            <input type="text" class="form-control me-sm-2" placeholder="Busque...">
+                            <button type="submit" class="btn btn-outline-light"><i class="bi bi-search"></i></button>
+                        </form>
+
+                        <!-- <div class="profile">
+                           <div class="btn-group">
+                            <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="./src/avatar.png" id="navbarAvatar" alt="">
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Sobre</a></li>
+                              <li><a class="dropdown-item" href="#">Preferências</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="#">Sair <i class="bi bi-box-arrow-left"></i>
+                              </a></li>
+                            </ul>
+                          </div>
+                        </div> -->
+
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <section>
+            <div class="faixaprincipal trapzeio">
+                <div class="container row flex-lg-row-reverse align-items-center g-5 py-5 d-flex justify-content-center">
+                    <div class="col-10 col-sm-8 col-lg-6" style="margin-top: 0px !important">
+                      <img src="./src/logo3.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+                    </div>
+                    <div class="col-lg-6" style="margin-top: 0px !important">
+                      <h1 class="display-5 fw-bold lh-1 mb-3">Bem vindo ao <span style="color: #d23a3a;">VSCO</span>! Seu mais novo banco digital.</h1>
+                      <p class="lead">Simplificando suas finanças, com inovação.
+                        Contas, pagamentos e investimentos sem sair de casa.</p>
+                      <div class="d-grid gap-2 d-md-flex justify-content-md-start" >
+                        <button type="button" class="btn btn-light btn-lg px-4" style="z-index: 11; background-color: #d23a3a; color: white;">Cadastrar</button>
+                        <button type="button" class="btn btn-light btn-lg px-4" style="z-index: 11;"><a id="login" href="./NiceAdmin/index.html">Entrar</a></button>
+                      </div>
+                    </div>
+                </div>
+                <canvas></canvas>
+            </div>
+
+
+            <div class="container px-4" id="hanging-icons">
+            <h2 class="pb-2 border-bottom">Features</h2>
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+                <div class="col d-flex align-items-start">
+                <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+                    <i class="bi bi-toggles2"></i>
+                </div>
+                <div>
+                    <h2>Amigável</h2>
+                    <p>desenvolvido com foco na experiência do usuário. Sua interface intuitiva e simplificada permite que qualquer pessoa possa realizar operações financeiras com facilidade. Com recursos acessíveis e um design amigável, nosso aplicativo torna a gestão financeira mais simples e descomplicada.</p>
+                    <a href="#" class="btn btn-danger">
+                    Saiba mais
+                    </a>
+                </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+                    <i class="bi bi-speedometer2"></i>
+                </div>
+                <div>
+                    <h2>Ágil</h2>
+                    <p>Priorizamos a agilidade em todas as nossas operações financeiras. Tudo aqui é projetado para tornar as transações rápidas e eficientes, de transferências à investimentos, nossos processos são simplificados, com interfaces intuitivas que permitem aos clientes realizar suas operações com facilidade e rapidez.</p>
+                    <a href="#" class="btn btn-danger">
+                    Saiba mais
+                    </a>
+                </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+                    <i class="bi bi-shield-lock-fill"></i>
+                </div>
+                <div>
+                    <h2>Seguro</h2>
+                    <p>Aqui no VSCO BANK, segurança é prioridade absoluta. Utilizamos tecnologias avançadas de criptografia e autenticação de dois fatores para garantir a proteção dos dados e transações dos nossos clientes. Além disso, contamos com um sistema de monitoramento constante para identificar e responder prontamente a qualquer atividade suspeita.</p>
+                    <a href="#" class="btn btn-danger">
+                    Saiba mais
+                    </a>
+                </div>
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center text-lg-start bg-light text-muted border-top mt-5">
+
+        <!-- Links  -->
+        <section class="">
+        <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <!-- Content -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3"></i><img src="./src/icon.png" id="navbarAvatar" alt="">
+                </h6>
+                <p>
+                </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                Produtos
+                </h6>
+                <p>
+                <a href="#!" class="text-reset">xxxxx</a>
+                </p>
+                <p>
+                <a href="#!" class="text-reset">xxxxx</a>
+                </p>
+                <p>
+                <a href="#!" class="text-reset">xxxx</a>
+                </p>
+                <p>
+                <a href="#!" class="text-reset">xxxxxx</a>
+                </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                Links
+                </h6>
+                <p>
+                <a href="#!" class="text-reset">xxx</a>
+                </p>
+                <p>
+                <a href="#!" class="text-reset">xxxxx</a>
+                </p>
+                <p>
+                <a href="#!" class="text-reset">xxxxxx</a>
+                </p>
+                <p>
+                <a href="#!" class="text-reset">xxxxxx</a>
+                </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">Contato</h6>
+                <p><i class="fas fa-home me-3"></i> Natal-RN, Brasil</p>
+                <p>
+                <i class="fas fa-envelope me-3"></i>
+                info@vsco.com
+                </p>
+                <p><i class="fas fa-phone me-3"></i> 84 999566845</p>
+                <p><i class="fas fa-print me-3"></i> 84 999566845</p>
+            </div>
+            <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+        </div>
+        </section>
+
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2023 Copyright:
+        <a class="text-reset fw-bold" href="https://mdbootstrap.com/">VSCO BANK</a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script>
+        const STAR_COLOR = '#fff';
+        const STAR_SIZE = 5;
+        const STAR_MIN_SCALE = 0.2;
+        const OVERFLOW_THRESHOLD = 20;
+        const STAR_COUNT = ( window.innerWidth + window.innerHeight ) / 20;
+
+        const canvas = document.querySelector( 'canvas' ),
+            context = canvas.getContext( '2d' );
+
+        let scale = 1, // device pixel ratio
+            width,
+            height;
+
+        let stars = [];
+
+        let pointerX,
+            pointerY;
+
+        let velocity = { x: 0, y: 0, tx: 0, ty: 0, z: 0.0005 };
+
+        let touchInput = false;
+
+        generate();
+        resize();
+        step();
+
+        window.onresize = resize;
+        canvas.onmousemove = onMouseMove;
+        canvas.ontouchmove = onTouchMove;
+        canvas.ontouchend = onMouseLeave;
+        document.onmouseleave = onMouseLeave;
+
+        function generate() {
+
+        for( let i = 0; i < STAR_COUNT; i++ ) {
+            stars.push({
+            x: 0,
+            y: 0,
+            z: STAR_MIN_SCALE + Math.random() * ( 1 - STAR_MIN_SCALE )
+            });
+        }
+
+        }
+
+        function placeStar( star ) {
+
+        star.x = Math.random() * width;
+        star.y = Math.random() * height;
+
+        }
+
+        function recycleStar( star ) {
+
+        let direction = 'z';
+
+        let vx = Math.abs( velocity.x ),
+                vy = Math.abs( velocity.y );
+
+        if( vx > 1 || vy > 1 ) {
+            let axis;
+
+            if( vx > vy ) {
+            axis = Math.random() < vx / ( vx + vy ) ? 'h' : 'v';
+            }
+            else {
+            axis = Math.random() < vy / ( vx + vy ) ? 'v' : 'h';
+            }
+
+            if( axis === 'h' ) {
+            direction = velocity.x > 0 ? 'l' : 'r';
+            }
+            else {
+            direction = velocity.y > 0 ? 't' : 'b';
+            }
+        }
+
+        star.z = STAR_MIN_SCALE + Math.random() * ( 1 - STAR_MIN_SCALE );
+
+        if( direction === 'z' ) {
+            star.z = 0.1;
+            star.x = Math.random() * width;
+            star.y = Math.random() * height;
+        }
+        else if( direction === 'l' ) {
+            star.x = -OVERFLOW_THRESHOLD;
+            star.y = height * Math.random();
+        }
+        else if( direction === 'r' ) {
+            star.x = width + OVERFLOW_THRESHOLD;
+            star.y = height * Math.random();
+        }
+        else if( direction === 't' ) {
+            star.x = width * Math.random();
+            star.y = -OVERFLOW_THRESHOLD;
+        }
+        else if( direction === 'b' ) {
+            star.x = width * Math.random();
+            star.y = height + OVERFLOW_THRESHOLD;
+        }
+
+        }
+
+        function resize() {
+
+        scale = window.devicePixelRatio || 1;
+
+        width = window.innerWidth * scale;
+        height = window.innerHeight * scale;
+
+        canvas.width = width;
+        canvas.height = height;
+
+        stars.forEach( placeStar );
+
+        }
+
+        function step() {
+
+        context.clearRect( 0, 0, width, height );
+
+        update();
+        render();
+
+        requestAnimationFrame( step );
+
+        }
+
+        function update() {
+
+        velocity.tx *= 0.6;
+        velocity.ty *= 0.6;
+
+        velocity.x += ( velocity.tx - velocity.x ) * 0.8;
+        velocity.y += ( velocity.ty - velocity.y ) * 0.8;
+
+        stars.forEach( ( star ) => {
+
+            star.x += velocity.x * star.z;
+            star.y += velocity.y * star.z;
+
+            star.x += ( star.x - width/2 ) * velocity.z * star.z;
+            star.y += ( star.y - height/2 ) * velocity.z * star.z;
+            star.z += velocity.z;
+
+            // recycle when out of bounds
+            if( star.x < -OVERFLOW_THRESHOLD || star.x > width + OVERFLOW_THRESHOLD || star.y < -OVERFLOW_THRESHOLD || star.y > height + OVERFLOW_THRESHOLD ) {
+            recycleStar( star );
+            }
+
+        } );
+
+        }
+
+        function render() {
+
+        stars.forEach( ( star ) => {
+
+            context.beginPath();
+            context.lineCap = 'round';
+            context.lineWidth = STAR_SIZE * star.z * scale;
+            context.globalAlpha = 0.5 + 0.5*Math.random();
+            context.strokeStyle = STAR_COLOR;
+
+            context.beginPath();
+            context.moveTo( star.x, star.y );
+
+            var tailX = velocity.x * 2,
+                tailY = velocity.y * 2;
+
+            // stroke() wont work on an invisible line
+            if( Math.abs( tailX ) < 0.1 ) tailX = 0.5;
+            if( Math.abs( tailY ) < 0.1 ) tailY = 0.5;
+
+            context.lineTo( star.x + tailX, star.y + tailY );
+
+            context.stroke();
+
+        } );
+
+        }
+
+        function movePointer( x, y ) {
+
+        if( typeof pointerX === 'number' && typeof pointerY === 'number' ) {
+
+            let ox = x - pointerX,
+                oy = y - pointerY;
+
+            velocity.tx = velocity.tx + ( ox / 8*scale ) * ( touchInput ? 1 : -1 );
+            velocity.ty = velocity.ty + ( oy / 8*scale ) * ( touchInput ? 1 : -1 );
+
+        }
+
+        pointerX = x;
+        pointerY = y;
+
+        }
+
+        function onMouseMove( event ) {
+
+        touchInput = false;
+
+        movePointer( event.clientX, event.clientY );
+
+        }
+
+        function onTouchMove( event ) {
+
+        touchInput = true;
+
+        movePointer( event.touches[0].clientX, event.touches[0].clientY, true );
+
+        event.preventDefault();
+
+        }
+
+        function onMouseLeave() {
+
+        pointerX = null;
+        pointerY = null;
+
+        }
+
+    </script>
+    </body>
+</html>
